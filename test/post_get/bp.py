@@ -6,16 +6,21 @@ blueprint = Blueprint('blueprint',__name__)
 #蓝图路由
 @blueprint.route('/')
 def index():
-    return '"request:%s"%( request.method)'
+    return "request:%s"%( request.method)
 
 #蓝图路由
 @blueprint.route('/head')
 def head():
     #return 'head'
-    return '"request:%s"%( request.method)'
+    return "request:%s"%( request.method)
 
 @blueprint.route('/get')
 def get():
     var_a = request.args.get('a','imooc')
     print(var_a)
     return "request:%s,params:%s,var_a:%s"%( request.method,request.args,var_a )
+
+@blueprint.route('/post',methods = ['post'])
+def post():
+
+    return 'osssk'
