@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>hello templates,{{ name }}</h1>
+    <p>
+        {% if user %}
+            姓名：{{ user.name }},年龄：{{ user.age }},住址：{{ user.addr }}
+        {% endif %}
+        {% for temp in number_list %}
+            {{temp}}
+        {% endfor %}
+    </p>
+</html>

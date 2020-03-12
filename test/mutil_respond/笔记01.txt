@@ -1,0 +1,11 @@
+###
+#respond
+#1.text
+#2.json(jsonify)
+#3.template
+
+###
+#jinja2
+1.变量
+2.context
+
