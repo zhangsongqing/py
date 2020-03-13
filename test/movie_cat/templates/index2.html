@@ -13,14 +13,16 @@
         {% for temp in number_list %}
             {{temp}}
         {% endfor %}
-         {% for temp in mysql_user %}
-            {{temp}}
-        {% endfor %}
     </p>
     <p>
         {% for item in mysql_user %}
-            {{item.user}}
+            {{item.id}}{{item.user_name}}{{item.user_pwd}}
         {% endfor %}
+    </p>
+    <p>
+        {% if query1 %}
+            {{query1.id}}{{query1.user_name}}{{query1.user_pwd}}
+        {% endif %}
     </p>
 </body>
 </html>

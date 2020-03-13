@@ -1,7 +1,7 @@
 from sqlalchemy import Integer,String
 
 from application import db
-class OpsUser(db):
+class Ops_user(db.Model):
     __tablename__ = 'ops_user'
 
     id = db.Column(Integer, primary_key=True)

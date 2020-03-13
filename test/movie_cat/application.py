@@ -14,7 +14,7 @@ app = Flask( __name__ )
 #windows set ops_config=local|production
 #if "ops_config" in os.environ:
 #    app.config.from_pyfile( "config/%s_setting.py"%( os.environ['ops_config'] ) )
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://flask:123456@172.10.4.100/mysql"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://flask:123456@172.10.4.100/flask"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy( app )
 
