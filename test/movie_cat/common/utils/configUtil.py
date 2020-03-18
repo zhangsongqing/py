@@ -3,7 +3,7 @@
 
 import configparser
 
-from movie_cat.common.utils import fileUtil
+from movie_cat.common.utils import fileUtil_copy
 
 
 class configUtil:
@@ -11,7 +11,7 @@ class configUtil:
     初始化即读取配置文件
     """
     def __init__(self, confName):
-        configPath = fileUtil.repairPath(fileUtil.getConfigPath())
+        configPath = fileUtil_copy.repairPath(fileUtil_copy.getConfigPath())
         self.configPath = configPath + confName
         ###必须使用RawConfigParser()，否则会报错
         self.cf = configparser.RawConfigParser()
