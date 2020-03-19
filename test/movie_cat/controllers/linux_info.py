@@ -14,9 +14,9 @@ def get_linux_info():
     hosts = hosts.split(',')
     print(hosts)
     hosts_dict = {}
+    result = GetLinuxMessage()
     for host in hosts:
         print('主机IP为%s的系统信息：'%host)
-        result = GetLinuxMessage()
         #hostIP = '172.10.4.100'
         hostIP = host
         host_name = result.get_hostname(hostIP)
